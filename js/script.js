@@ -1,6 +1,48 @@
 $(document).ready(function(){
 
 	"use strict";
+
+	/* ====================
+	CUSTOM 
+	=================== */
+
+	$('.safemail').one( 'mouseenter', function() {
+		var  $this = $(this),
+		strMail = [
+			($this.data('user1')||''),
+			($this.data('user2')||''),
+			'@',
+			($this.data('domain1')||''),
+			($this.data('domain2')||''),
+			'.',
+			($this.data('tld')||'com')
+		].join('');
+
+		$this.fadeOut( 100, function() {
+			$this.prop('href','mailto:' + strMail);
+			$this.text( strMail);
+			$this.fadeIn(300);
+		} );
+	});	
+	$('.safephone').one( 'mouseenter', function() {
+		var  $this = $(this),
+		strFoon = [
+			'+',
+			($this.data('country')||''),
+			' (0)',
+			($this.data('zone')||''),
+			' ',
+			($this.data('one')||''),
+			($this.data('two')||''),
+		].join('');
+
+		$this.fadeOut( 100, function() {
+			$this.prop('href','tel:' + strFoon);
+			$this.text( strFoon);
+			$this.fadeIn(300);
+		});
+
+	});
 	
 	/* =================================
 	SUPERSLIDES
