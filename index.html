@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign pages = site.html_pages | sort:"weight"  %}
+
+    {% for mypage in pages %}
+    {% if page.url != mypage.url %}
+    {{mypage.content}}
+    {% endif %}
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+

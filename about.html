@@ -1,0 +1,160 @@
+---
+layout: default
+weight: 1
+class: about
+title: Wie ik ben
+strengths:
+  - first:
+    pct: 80
+    title: bliep
+    icon: eye
+    content: zorks enzo
+  - second:
+    pct: 90
+    title: bloep
+    icon: leaf
+    content: zoinks enzo
+---
+<section class="section {{page.class}}" data-slide="{{page.weight}}">
+    <div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="title">
+            <h2 class="title-section wow fadeInDown">{{page.title}}</h2>
+            <div class="separator_wrapper wow fadeIn">
+                <div class="separator_first_circle">
+                    <div class="separator_second_circle_grey"></div>
+                </div>
+            </div>
+            <p class="subtitle wow fadeInDown">Ik ben een rustige, creatieve en muzikale kleuterjuf met een ruime ervaring in het buitenland.</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 wow fadeInDown" data-wow-delay="500ms">
+        <div class="box-resume">
+            <div class="center-top">
+                <img src="images/about-img.jpg" alt="" class="img-responsive" />
+            </div>
+            <ul>
+                <li><strong>Naam</strong> Hana Vanroy</li>
+                <li><strong>Wonende</strong> Leuven</li>
+                <li><strong>Geboren</strong> 24 mei 1989</li>
+                <li><strong>Getogen</strong> Genk</li>
+                <li><strong>Email</strong> <a href="mailto:hana@badpotato.be" title="" class="a-email">hana@badpotato.be</a></li>
+                <!-- <li><strong>Phone</strong> (+62) 1234 567 8910</li> -->
+                <!-- <li><strong>Website</strong> www.domain.com</li> -->
+            </ul>
+            <div class="center-bottom">
+                <a href="{{site.resume_pdf}}" title="Download Resume" class="download-resume btn btn-default btn-primary">Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 wow fadeInDown">
+        <p class="leads">Hallo! Ik ben Hana. Ik ben een vlotte, lieve maar soms ook kordate kleuterjuf met uitgebreide ervaring.</p>
+        <p>Naast de klassieke onderwijsmethodes heb ik ook ervaring met methodeschooltjes zoals Reggio Emilio en Freinet. Tijdens mijn stages heb ik lesgegeven in zeer diverse milieus, waaronder ook het ziekenhuisschooltje van Gasthuisberg Leuven. Ik spreek vlot Engels en heb 4 maanden in Sydney, Australie gewoond om les te geven in het kader van mijn stage.</p>
+        <div class="we-do">
+            {% for el in page.strengths %}  
+            <div class="row item wow fadeInDown">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="icon">
+                        <i class="fa fa-{{el.icon}}"></i>
+                        <p>{{el.pct}} %</p>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <div class="desc">
+                        <h4>{{el.title}}</h4>
+                        <p>{{el.content}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="years">
+            <div class="title2 wow fadeInDown">
+                <div class="separator_first_circle">
+                    <div class="separator_second_circle_grey"></div>
+                </div>
+                OPLEIDING
+            </div>
+            <div class="row item wow fadeInDown">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="year">
+                        2005
+                        <hr />2015
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <div class="desc">
+                        <h4>SANTET FUNDAMENTAL SCHOOL</h4>
+                        <p class="subtitle">Education Name</p>
+                        <p>Commodo enim aliquam suspendisse tortor cum diam, commodo facilisis, rutrum et duis nisl porttitor, vel eleifend odio ultricies ut, orci in adipiscing felis velit nibh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row item wow fadeInDown">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="year">
+                        2005
+                        <hr />2015
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <div class="desc">
+                        <h4>SANTET FUNDAMENTAL SCHOOL</h4>
+                        <p class="subtitle">Education Name</p>
+                        <p>Commodo enim aliquam suspendisse tortor cum diam, commodo facilisis, rutrum et duis nisl porttitor, vel eleifend odio ultricies ut, orci in adipiscing felis velit nibh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row item wow fadeInDown">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="year">
+                        2005
+                        <hr />2015
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <div class="desc">
+                        <h4>SANTET FUNDAMENTAL SCHOOL</h4>
+                        <p class="subtitle">Education Name</p>
+                        <p>Commodo enim aliquam suspendisse tortor cum diam, commodo facilisis, rutrum et duis nisl porttitor, vel eleifend odio ultricies ut, orci in adipiscing felis velit nibh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="years">
+            <div class="title2 wow fadeInDown">
+                <div class="separator_first_circle">
+                    <div class="separator_second_circle_grey"></div>
+                </div>
+                WERK EN ERVARING
+            </div>
+            {% for post in site.posts %} {% if post.type == 'work' %}
+            <div class="row item wow fadeInDown">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="year">
+                        {{post.from}}
+                        <hr />{{post.to}}
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <div class="desc">
+                        <h4>{{post.title}}</h4>
+                        <p class="subtitle">{{post.subtitle}}</p>
+                        <p>{{post.content}}.</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
